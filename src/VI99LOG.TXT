@@ -1,0 +1,62 @@
+VI99 LOG
+------------------------------------------------------------------
+BUGS:
+J command strips off the last line..??? Maybe??
+
+Jan28 2023
+V1.43f  released on Atariage
+Fixed lots of stuff.
+Improved list speed a bit. Removed -TRAILING. (COUNTED strings don't need it)
+Optimized where screen is re-drawn to speed up deletions. 
+
+'o' command opens line below cursor 
+'O' command opens line above the cursor
+
+Added WAITKEY to handle double letter commands better 
+
+Startup tries to loaded VI99FONT file from the $HOME path 
+(if file not found your get TI ROM Font like BASIC)
+
+Added SAVEUNDO to 'a' command 
+'dw'  waits for the w key properly
+
+'k' command fixed: does not jump 2 lines at top of screen
+'J' command to join lines
+
+BACK-SPACE works correctly when editing a line 
+ENTER now does line splitting
+
+*Not Quite vi Functions*
+--------------------------
+'p' command adds text below CURRENT LINE, not at cursor
+'P' command adds text above the current line,  
+^K  kills the contents of the clipboard. (VI99 has only " buffer)
+
+font command loads a font from the shell command line. 
+The default font is called vi99font 
+
+------------------------------------------------------------------
+V1.43e
+Fixed past on long lines bug.
+Released.
+
+------------------------------------------------------------------
+V1.43d
+- Found stack overflow on INSERT-TEXT. 
+- Simplified INSERT-TEXT and WRITEBACK 
+- Changed INSERTLN# 
+
+------------------------------------------------------------------
+V1.43c
+- Corrected 3dd command to remove 3 lines not 4 and not delete paste EOF.
+
+------------------------------------------------------------------
+V1.43b  
+- Fixed UPDATELN to detect new text version existing text. 
+  Allocates bytes correctly now.
+- Fixed ^M in EDITLN so it now opens a new line under existing line. 
+
+
+
+
+

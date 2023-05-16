@@ -1,0 +1,59 @@
+VI99 1.43d Cheat Sheat 
+--------------------------
+V1.43  
+
+Cursor Movement
+---------------
+h - move cursor right
+j - move cursor up 
+k - move cursor down 
+l - move cursor right 
+
+Cursor commands accept a preceding numeric argument
+4h - move cursor right 4 chars after cursor position
+9j - move cursor down 9 lines below current line
+etc.
+
+ i – Insert at cursor (goes into insert mode)
+ a – Write after cursor (overwrite mode)
+ A – Write at the end of line (overwrite mode)
+ ESC – Terminate editing mode
+
+ u – Undo all changes to the entire line (one level only)
+
+ o – Open a new line (goes into insert mode)
+
+ dd – Delete line
+ 3dd – Delete 3 lines.
+
+ dw – Delete word     (does not go to clipboard)
+ 4dw – Delete 4 words (does not go to clipboard)
+
+ x – Delete character at the cursor
+ r – Replace character
+ R – Overwrite characters from cursor onward
+ 
+ 
+ yy - CUT line to clipboard 
+ nyy - cut n lines to the clipboard 
+
+ G  - goto to last line
+ 1G - goto first line 
+ nG - goto line n 
+
+ ~ – Change case of individual character
+
+*NON-STANDARD*
+^K - erase entire clipboard buffer 
+
+=============================================
+
+** NOT IMPLEMENTED (YET) **
+ D – Delete contents of line after the cursor
+ 
+ C – Delete contents of a line after the cursor and insert new text.
+     Press ESC key to end insertion.
+
+ s – Substitute one character under cursor continue to insert
+ S – Substitute entire line and begin to insert at the beginning of the line 
+ cw – Change word

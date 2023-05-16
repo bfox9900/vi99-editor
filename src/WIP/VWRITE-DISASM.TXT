@@ -1,0 +1,27 @@
+   A7C4  C004  mov  R4,R0                  (18)
+   A7C6  C136  mov  *R6+,R4                (30)
+   A7C8  C0B6  mov  *R6+,R2                (30)
+   A7CA  C000  mov  R0,R0                  (18)
+   A7CC  1309  jeq  >a7e0                  (12)
+   A7CE  06A0  bl   @>a73e                 (32)
+         A73E
+   A73E  0264  ori  R4,>4000               (22)
+         4000
+   A742  02A1  stwp R1                     (12)
+   A744  0300  limi >0000                  (24)
+         0000
+   A748  D821  movb @>0009(R1),@>8c02      (50)
+         0009
+         8C02
+   A74E  C804  mov  R4,@>8c02              (38)
+         8C02
+   A752  045B  b    *R11                   (20)
+   A7D2  0203  li   R3,>8c00               (20)
+         8C00
+   A7D6  D4F2  movb *R2+,*R3               (40)
+   A7D8  0600  dec  R0                     (14)
+   A7DA  16FD  jne  >a7d6                  (14)
+   A7DC  0300  limi >0002                 
+         0002
+   A7E0  C136  mov  *R6+,R4               
+   A7E2  045A  b    *R10        
