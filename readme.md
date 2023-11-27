@@ -20,9 +20,9 @@ To use the editor with Classic99, unzip the zip file into a folder on your PC.
 vi99 is an 80 column editor and therefore requires the F18 video card or equivalent functionality on an emulator like Classic99. 
 
 #### Command Shell
-![Alt text](https://github.com/bfox9900/vi99/blob/main/images/vi99-command-shell.png "vi99 Command Shell")
+![Alt text](https://github.com/bfox9900/vi99-editor/blob/main/images/vi99-command-shell.png "vi99 Command Shell")
 
 #### ls Command 
-![Alt text](https://github.com/bfox9900/vi99/blob/main/images/lscommand.png "vi99 Command Shell")
+![Alt text](https://github.com/bfox9900/vi99-editor/blob/main/images/lscommand.png "vi99 Command Shell")
 
 
