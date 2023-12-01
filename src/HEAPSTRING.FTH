@@ -22,8 +22,7 @@ DECIMAL
 \ variable H is our memory management pointer
  
 : HALLOT ( n --)  \ WITH memory protection
-  H
-  2DUP @ + BUFFEND TXTBUFFER WITHIN ABORT" HEAP error"
+  H 2DUP @ + BUFFEND TXTBUFFER WITHIN ABORT" HEAP error"
   +! ;
  
 : HEAP   H @ ;
